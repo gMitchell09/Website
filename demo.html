@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/joint.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css"/>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+    <!-- Joint -->
+    <script src="js/lodash.min.js"></script>
+    <script src="js/backbone-min.js"></script>
+    <script src="js/joint.js"></script>
+
+    <script src="js/demo.js"></script>
+  </head>
+  <body>
+    <input type="hidden" id="shape_metadata" value="
+    {
+      shapes: [
+        monitor: {
+          display: 'Fancy Monitor',
+          shape: rect,
+          height: 20,
+          width: 40
+        }
+      ]
+    }
+    "/>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="sidebar col-sm-3">
+          <label for="preview_search">Search:</label>
+          <input type="text" id="preview_search"  class="form-control" placeholder="Search..." />
+          <hr />
+          <table class="shape_table">
+            <tr>
+              <td><div class="shape_preview">aasdf</div></td>
+              <td><div class="shape_preview">aasdf</div></td>
+            </tr>
+            <tr>
+              <td><div class="shape_preview">aasdf</div></td>
+              <td><div class="shape_preview">aasdf</div></td>
+            </tr>
+            <tr>
+              <td><div class="shape_preview">aasdf</div></td>
+              <td><div class="shape_preview">aasdf</div></td>
+            </tr>
+            <tr>
+              <td><div class="shape_preview">aasdf</div></td>
+              <td><div class="shape_preview">aasdf</div></td>
+            </tr>
+          </table>
+        </div>
+        <div id="paper" class="col-sm-9"></div>
+      </div>
+    </div>
+  </body>
+</html>

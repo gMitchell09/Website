@@ -1,0 +1,121 @@
+/* CSS Variables */
+.card {
+  --transition-duration: 0.15s;
+}
+/* End CSS Variables */
+
+.headline-region {
+  min-height: 100vh;
+  align-items: center;
+}
+
+hr {
+  background-color: var(--bs-secondary);
+}
+
+.fa {
+  /* padding: 20px; */
+  font-size: 40px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: var(--bs-dark);
+  color: var(--bs-secondary);
+}
+
+.fa:hover {
+  color: var(--bs-secondary);
+}
+
+.resume {
+  list-style: outside none none;
+}
+
+.resume-entry::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 7px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%; 
+  border: 3px solid var(--bs-success);
+  z-index: 100;
+  background-color: var(--bs-light);
+}
+
+/* .resume-entry::after { */
+
+li:not(:last-of-type)[class="resume-entry"]::after {
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  content: "";
+  z-index: 2;
+  background: var(--bs-success) none repeat scroll 0% 0%;
+}
+
+.resume-entry {
+  position: relative;
+  padding-left: 44px;
+}
+
+.resume-area {
+  positon: relative;
+  display: flex;
+}
+
+.project-card {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.project-card img {
+  display:block;
+  position: relative;
+  -webkit-transition: all var(--transition-duration);
+  transition: all var(--transition-duration);
+}
+
+.project-card:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.project-card .card-body {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  bottom: 0;
+  padding: 1em;
+  background: var(--bs-secondary);
+  -webkit-transition: -webkit-transform var(--transition-duration);
+  transition: transform var(--transition-duration);
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  visibility: hidden;
+}
+
+.project-card .card-body {
+  -webkit-transition: -webkit-transform var(--transition-duration);
+  transition: transform var(--transition-duration);
+  -webkit-transform: translate3d(0,200%,0);
+  transform: translate3d(0,200%,0);
+  visibility: visible;
+}
+
+.project-card:hover .card-body {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body class="bg-dark">
+  <nav class="navbar shadow sticky-top navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<div style="position: fixed; top: 0px; bottom: 0px; width: 100vw; height: 100vh; z-index: -10;">
+  <canvas id="bkgCanvas" width="1024" height="1024" style="width: 100%; height: 100%" class="bg-dark"></canvas>
+</div>
+
+<div class="container text-light" style="height:100vh"> <!--headline-region">-->
+  <div class="row h-100 justify-content-center align-items-center"> 
+    <div class="col"></div>
+    <div class="col-4 text-light">
+      <!-- profile pic -->
+      <img height="500px" width="300px" style="background-color:var(--bs-light)" />
+    </div>
+    <div class="align-self-center col-7 text-light">
+      <div class="row"><h1>George Mitchell</h1></div>
+      <div class="row pb-2"><hr/></div>
+      <div class="row pb-4"><h2><small class="text-muted">A longer blurb should go here but I'm not sure what to currently fill it with. TBD</small></h2></div>
+      <div class="row">
+        <a title="Github" href="#" class="fa fa-github" data-bs-toggle="tooltip" data-bs-placement="bottom"></a>
+        <a title="LinkedIn" href="#" class="fa fa-linkedin" data-bs-toggle="tooltip" data-bs-placement="bottom"></a>
+        <a title="Stack Overflow" href="#" class="fa fa-stack-overflow" data-bs-toggle="tooltip" data-bs-placement="bottom"></a>
+        <a title="Email" href="#" class="fa fa-at" data-bs-toggle="tooltip" data-bs-placement="bottom"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row text-light pb-4"><h1><center><a name="projects">Projects</a></center></h1></div>
+  <div class="py-4 px-4 mb-5 bg-light">
+    <div class="row row-cols-md-4 row-cols-1 g-4 justify-content-center">
+      <div class="col"><a>
+        <div class="card project-card">
+          <a href="#"><img src="https://via.placeholder.com/300" class="card-img-top"></a>
+          <div class="card-body">
+            <h5 class="card-title">EGL Backend for ImGui</h5>  
+            <p class="card-text">Developed a EGL NullWS backend for ImGui for rendering high-quality GUIs with SGX hardware acceleration on the BeagleBone Black</p>
+            <a href="#" class="btn btn-primary text-light">Github</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card project-card">
+          <img src="https://via.placeholder.com/300" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>  
+            <p class="card-text">askdjfhaksldfjhalksdjhfakljsdhfklajsdhfk</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card project-card">
+          <img src="https://via.placeholder.com/300" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>  
+            <p class="card-text">askdjfhaksldfjhalksdjhfakljsdhfklajsdhfk</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row text-light pb-4"><h1><center><a name="experience">Experience</a></center></h1></div>
+  <div class="bg-light resume-area">
+    <ul class="resume">
+      <li class="resume-entry">Asdf<br/><br/>asdfasdf</li>
+      <li class="resume-entry">Asdf<br/><br/>asdfasdf</li>
+      <li class="resume-entry">Asdf<br/><br/>asdfasdf</li>
+      <li class="resume-entry">Asdf<br/><br/>asdfasdf</li>
+      <li class="resume-entry">Asdf<br/><br/>asdfasdf</li>
+      <li class="resume-entry">Asdf<br/><br/>asdfasdf</li>
+      <li class="resume-entry">Asdf<br/><br/>asdfasdf</li>
+    </ul>
+  </div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+  <script src="bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="js/background.js"></script>
+</body>
+</html>
